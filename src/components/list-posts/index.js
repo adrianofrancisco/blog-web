@@ -37,7 +37,7 @@ function ListPosts() {
 
 			const response = await apiService.post('reaction', data);
 			if (response.status === 200) {
-				reloadPage();
+				loadPosts();
 			}
 		} catch (error) {
 			Swal.fire({
@@ -46,10 +46,6 @@ function ListPosts() {
 				timer: 5000
 			});
 		}
-	}
-
-	function reloadPage() {
-		document.location.reload(true);
 	}
 
 	return (
