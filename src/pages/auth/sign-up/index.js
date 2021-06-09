@@ -44,7 +44,6 @@ function SignUp({ ...props }) {
 			};
 
 			const response = await apiService.post('/sign-up', data);
-
 			if (response.status === 200) {
 				actions.setSubmitting(false);
 
@@ -57,7 +56,7 @@ function SignUp({ ...props }) {
 				});
 			};
 		} catch (error) {
-			actions.setFieldError('general', 'Erro ao criar a conta.');
+			actions.setFieldError('general', error.message);
 			actions.setSubmitting(false);
 		}
 	}

@@ -25,10 +25,12 @@ function Post({ ...props }) {
 					text: 'Post gravado com sucesso!',
 					timer: 5000
 				}).then((result) => {
+					setSaving(false);
 					reloadPage();
 				});;
+			} else {
+				setSaving(false);
 			}
-			setSaving(false);
 		} catch (error) {
 			Swal.fire({
 				icon: 'error',

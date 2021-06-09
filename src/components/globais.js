@@ -14,7 +14,7 @@ export const Form = styled.form`
     margin-top: 5px;
 
     .colsTable {
-        padding-bottom: 5px;
+        padding-bottom: 8px;
     }
 
     h1 {
@@ -43,34 +43,11 @@ export const Form = styled.form`
     }
 
     h4 {
-        font-size: 12px;
+        font-size: 16px;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         justify-content: flex-start;
         color: ${`${colors.ERROR}`};
-    }
-
-    h5 {
-        font-size: 14px;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-        color: ${`${colors.SUCCESS}`};
-    }
-
-    h6 {
-        font-size: 16px;
-        display: flex;
-        flex-direction: row;
-        align-items: left;
-        justify-content: left;
-        margin-bottom: 10px;
-    }
-
-    hr {
-        margin-bottom: 15px;
-        margin-top: 15px;
     }
 `;

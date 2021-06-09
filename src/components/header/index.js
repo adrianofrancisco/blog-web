@@ -21,24 +21,22 @@ function Header() {
     }
 
     async function logout() {
-		await removeDataUser();
+        await removeDataUser();
         history.push('sign-in');
-	}
+    }
 
     return (
-        <div>
-            <Grid container spacing={3}>
-                <Grid container item spacing={5} justify="flex-end" alignItems="center">
-                    <Grid item>
-                        Bem-vindo {username}
-                    </Grid>
+        <Grid container spacing={3}>
+            <Grid container item spacing={5} justify="flex-end" alignItems="center">
+                <Grid item>
+                    Bem-vindo {username}
+                </Grid>
 
-                    <Grid item>
-                        <ExitToAppOutlinedIcon onClick={() => logout()} style={{ cursor: 'pointer' }}/>
-                    </Grid>
+                <Grid item>
+                    <ExitToAppOutlinedIcon onClick={() => logout()} style={{ cursor: 'pointer' }} />
                 </Grid>
             </Grid>
-        </div>
+        </Grid>
     );
 }
 

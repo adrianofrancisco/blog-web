@@ -5,7 +5,8 @@ const colors = {
     BUTTONDISABLED: '#A9A9A9',
     DESCRIPTION_POST: '#808080',
     BACKGROUND_ARTICLE: '#F0FFF0',
-    APP_BLOG_REACT: '#5a7262'
+    APP_BLOG_REACT: '#5a7262',
+    ERROR: '#8B0000'
 };
 
 export default colors;
